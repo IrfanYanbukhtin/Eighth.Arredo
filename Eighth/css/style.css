@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container1{
+    padding: 0 1rem;
+}
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 95%;
+
+}
+
+.hiddenicon, .hiddenlogo{
+    display: none;
+}
+
+.logo img{
+  width: 60%;
+  padding: 2rem 1rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding-left: 4rem;
+    font-size: 20px;
+    position: relative;
+    
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 3.8rem;
+    transition: 0.5s;
+}
+
+nav .under::before{
+   width: 50%;
+}
+
+.navbar a:hover::before{
+    width: 59%;
+}
+
+
+.icons i{
+    color: white;
+    font-size: 23px;
+    padding-left: 2rem;
+}
+
+.middle{
+    background-image: url(https://arredo.qodeinteractive.com/wp-content/uploads/2018/05/main-slider-img-1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    
+}
+
+.middle img{
+    width: 100%;
+}
+
+.mid{
+    width: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+.mid h1{
+    color:white;
+    font-weight: 600;
+    font-size: 85px;
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+    width: 65%;
+}
+
+.mid p{
+    color: white;
+    margin-bottom: 4rem;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 0 4rem;
+    width: 65%;
+    
+}
+
+.mid a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 17px 45px;
+    transition: 0.3s;
+    font-weight: 600;
+    position: relative;
+    left: 8rem;
+    
+}
+
+.mid a::after{
+    content:">";
+    position: absolute;
+    right: 1.5rem;
+
+}
+
+
+.mid a:hover{
+    background-color: black;
+    scale: 105%;
+}
+
+.item{
+    padding: 10rem 5rem;
+    margin-bottom: 5rem;
+}
+
+
+.item h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 35px;
+    color: #282828;
+    font-weight: 600;
+
+}
+
+.item h4{
+    text-align: center;
+    color: #737373;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 28px;
+    width: 60%;
+    margin: auto;
+
+    
+}
+
+.item2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.box{
+    width: 31.5%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.box img{
+    width: 100%;
+    transition: 1.5s;
+    
+}
+
+.box a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #282828;
+    font-size: 15px;
+    padding-top: 1rem;
+    font-weight: 800;
+}
+
+.box span{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5rem;
+}
+
+
+.span2{
+    text-decoration: line-through;
+    color: #737373;
+}
+
+.box .spanin{
+    position: absolute;
+    left: 7%;
+    top: -12%;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 0;
+
+}
+
+.box .spanin2{
+    position: absolute;
+    left: 7%;
+    top: -12%;
+    color: #b4b4b4;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 0;
+
+}
+
+.box img:hover{
+    scale: 107%;
+}
+
+.upcoming{
+    background-image: url(https://arredo.qodeinteractive.com/wp-content/uploads/2018/05/h1-parallax-img-1.jpg);
+    text-align: center;
+    height: 80vh;
+    margin-bottom: 5rem;
+}
+
+
+.upcoming h2{
+    padding-top: 10rem;
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+}
+
+.upcoming h4{
+    color: white ;
+    font-weight: 300;
+    font-size: 22px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5rem;
+    
+}
+
+.upcoming a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 17px 45px;
+    transition: 0.3s;
+    font-weight: 600;
+    position: relative;
+}
+
+.upcoming a::after{
+    content:">";
+    position: absolute;
+    right: 1.5rem;
+
+}
+
+@media (max-width:576px) {
+    .one{
+        display: flex;
+        justify-content: start;
+        position: sticky;
+        top: 0;
+        
+    }
+
+    .all{
+        background-color: white;
+        width: 100%;
+        height: 10.8%;
+    }
+
+    .container1{
+        padding: 0px 0px;
+    }
+
+    .hiddenicon, .hiddenlogo{
+        display: block;
+    }
+
+    .mainlogo, nav, .icons{
+        display: none;
+    }
+
+    .hiddenicon{
+        transition: 0.5s;
+        padding-left: 2.2rem;
+    }
+
+    .hiddenicon:hover{
+        opacity: 0.5;
+    }
+
+    .hiddenicon i{
+        font-size: 16px;
+        color: #939393;
+    }
+
+     .hiddenlogo{
+        width: 100%;
+        padding-left: 25px;
+    }
+
+    .item{
+        text-align: center;
+    }
+   
+     .item2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .item2 .box{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+
+        
+    .upcoming{
+        text-align: center;
+    }
+}
+
+
